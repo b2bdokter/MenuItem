@@ -39,8 +39,8 @@
 <!--  TOP MENU TITLE PORTO  MOET NOG BOVEN ONDERSTAAND porto link komen   -->
      
     
-    <add id="RW_MenuItem::menu_item_porto" title="Porto 4.0.1" 
-    module="Smartwave_Porto" sortOrder="30" parent="RW_MenuItem::menu_item" resource="Smartwave_Core::all"/>
+    <add id="RW_MenuItem::menu_item_porto" title="Porto Settings" 
+    module="Smartwave_Porto" parent="RW_MenuItem::menu" sortOrder="30"  resource="Smartwave_Core::all"/>
 
 
 
@@ -50,11 +50,21 @@
 <!-- PORTO werkt zo te zien gaat naar settings  --> 
 
           <add id="RW_MenuItem::menu_item3" 
-          title="Porto Settings Panel" module="Smartwave_Porto"
+          title="Porto Theme Settings" module="Smartwave_Porto"
           sortOrder="40" parent="RW_MenuItem::menu_item_porto" 
           action="adminhtml/system_config/edit/section/porto_settings" 
           resource="Smartwave_Porto::theme_settings"
           />
+
+
+        <add id="RW_MenuItem::menu_item4" 
+        title="Porto Design Panel" module="Smartwave_Porto" 
+        sortOrder="44" parent="RW_MenuItem::menu_item_porto" 
+        action="adminhtml/system_config/edit/section/porto_design" 
+        resource="Smartwave_Porto::theme_design"
+        />
+
+
 
 <!-- 
 
