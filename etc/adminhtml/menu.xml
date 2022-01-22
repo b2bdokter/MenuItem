@@ -45,8 +45,8 @@
     
     
     
-    <add id="RW_MenuItem::menu_item_porto" title="Porto 4.0.1" 
-    module="Smartwave_Porto" sortOrder="30" parent="RW_MenuItem::menu_item" resource="Smartwave_Core::all"/>
+    <add id="RW_MenuItem::menu_item_porto" title="Porto Settings" 
+    module="Smartwave_Porto" parent="RW_MenuItem::menu" sortOrder="30"  resource="Smartwave_Core::all"/>
 
 
 
