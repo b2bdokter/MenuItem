@@ -11,7 +11,7 @@
          
 
 
-<!-- Dit is het eerte child menu  -->
+<!-- Dit is het eerte child menu   -->
        <add id="RW_MenuItem::menu_item"
            title="RW Items" module="RW_MenuItem"
            sortOrder="10" parent="RW_MenuItem::menu"
@@ -26,6 +26,7 @@
            action="createmenubackend/create/index"
            resource="RW_MenuItem::menu_item"
            />
+
 <!-- Dit is het eerte child poging van een subitem  --> 
         <add id="RW_MenuItem::menu_item2_sub"
            title="RW Item 2 sub" module="RW_MenuItem"
@@ -35,15 +36,8 @@
            />
 
 
-<!--  TOP MENU TITLE PORTO 
-
- MOET NOG BOVEN ONDERSTAAND porto link komen
-
--->
-
-
-    
-    
+<!--  TOP MENU TITLE PORTO  MOET NOG BOVEN ONDERSTAAND porto link komen   -->
+     
     
     <add id="RW_MenuItem::menu_item_porto" title="Porto 4.0.1" 
     module="Smartwave_Porto" sortOrder="30" parent="RW_MenuItem::menu_item" resource="Smartwave_Core::all"/>
