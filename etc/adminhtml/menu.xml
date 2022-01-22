@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+   <menu>
+
+<!--  ICON MENU TITLE  -->
+       <add id="RW_MenuItem::menu"
+           title="RW Menu" module="RW_MenuItem"
+           sortOrder="10"
+           resource="Magento_Backend::content"
+           />
+         
+
+
+<!-- Dit is het eerte child menu  -->
+       <add id="RW_MenuItem::menu_item"
+           title="RW Items" module="RW_MenuItem"
+           sortOrder="10" parent="RW_MenuItem::menu"
+           action="createmenubackend/create/index"
+           resource="RW_MenuItem::menu_item"
+           />
+
+
+         <add id="RW_MenuItem::menu_item2"
+           title="RW Item 2" module="RW_MenuItem"
+           sortOrder="10" parent="RW_MenuItem::menu"
+           action="createmenubackend/create/index"
+           resource="RW_MenuItem::menu_item"
+           />
+<!-- Dit is het eerte child poging van een subitem  --> 
+        <add id="RW_MenuItem::menu_item2_sub"
+           title="RW Item 2 sub" module="RW_MenuItem"
+           sortOrder="10" parent="RW_MenuItem::menu_item2"
+           action="createmenubackend/create/index"
+           resource="RW_MenuItem::menu_item"
+           />
+
+
+<!--  TOP MENU TITLE PORTO 
+
+ MOET NOG BOVEN ONDERSTAAND porto link komen
+
+-->
+
+
+    
+    
+    
+    <add id="RW_MenuItem::menu_item_porto" title="Porto 4.0.1" 
+    module="Smartwave_Porto" sortOrder="30" parent="RW_MenuItem::menu_item" resource="Smartwave_Core::all"/>
+
+
+
+
+
+
+<!-- PORTO werkt zo te zien gaat naar settings  --> 
+
+          <add id="RW_MenuItem::menu_item3" 
+          title="Porto Settings Panel" module="Smartwave_Porto"
+          sortOrder="40" parent="RW_MenuItem::menu_item_porto" 
+          action="adminhtml/system_config/edit/section/porto_settings" 
+          resource="Smartwave_Porto::theme_settings"
+          />
+
+<!-- 
+
+
+    WIl weten hoe je snel links kunt invoegen
+
+-->
+
+
+   </menu>
+</config>
+
