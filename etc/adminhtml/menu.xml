@@ -56,11 +56,21 @@
 <!-- PORTO werkt zo te zien gaat naar settings  --> 
 
           <add id="RW_MenuItem::menu_item3" 
-          title="Porto Settings Panel" module="Smartwave_Porto"
+          title="Porto Theme Settings" module="Smartwave_Porto"
           sortOrder="40" parent="RW_MenuItem::menu_item_porto" 
           action="adminhtml/system_config/edit/section/porto_settings" 
           resource="Smartwave_Porto::theme_settings"
           />
+
+
+        <add id="RW_MenuItem::menu_item4" 
+        title="Porto Design Panel" module="Smartwave_Porto" 
+        sortOrder="44" parent="RW_MenuItem::menu_item_porto" 
+        action="adminhtml/system_config/edit/section/porto_design" 
+        resource="Smartwave_Porto::theme_design"
+        />
+
+
 
 <!-- 
 
