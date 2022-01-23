@@ -36,26 +36,18 @@
            />
 
 
-<!--  TOP MENU TITLE PORTO  MOET NOG BOVEN ONDERSTAAND porto link komen   -->
+<!--  TOP MENU TITLE PORTO SETTINGS    -->
      
     
     <add id="RW_MenuItem::menu_item_porto" title="Porto Settings" 
-    module="Smartwave_Porto" parent="RW_MenuItem::menu" sortOrder="30"  resource="Smartwave_Core::all"/>
+    module="RW_MenuItem" parent="RW_MenuItem::menu" sortOrder="30"  resource="Smartwave_Core::all"/>
 
-
-
-
-
-
-<!-- PORTO werkt zo te zien gaat naar settings  --> 
-
-          <add id="RW_MenuItem::menu_item3" 
-          title="Porto Theme Settings" module="Smartwave_Porto"
-          sortOrder="40" parent="RW_MenuItem::menu_item_porto" 
-          action="adminhtml/system_config/edit/section/porto_settings" 
-          resource="Smartwave_Porto::theme_settings"
-          />
-
+        <add id="RW_MenuItem::menu_item3" 
+        title="Porto Theme Settings" module="Smartwave_Porto"
+        sortOrder="40" parent="RW_MenuItem::menu_item_porto" 
+        action="adminhtml/system_config/edit/section/porto_settings" 
+        resource="Smartwave_Porto::theme_settings"
+        />
 
         <add id="RW_MenuItem::menu_item4" 
         title="Porto Design Panel" module="Smartwave_Porto" 
@@ -65,11 +57,11 @@
         />
 
 <!-- 
-    Nieuw stuk voor store links:      cache ,design,order,invoices,credits
+    STORE LINKS  cache ,design,order,invoices,credits
 -->
 
     <add id="RW_MenuItem::menu_item_storelinks" title="Store Links" 
-    module="Smartwave_Porto" parent="RW_MenuItem::menu" sortOrder="100"  resource="Smartwave_Core::all"/>
+    module="RW_MenuItem" parent="RW_MenuItem::menu" sortOrder="100"  resource="Smartwave_Core::all"/>
 
           <add id="RW_MenuItem::menu_item_cache" 
           title="Cache settings" module="Magento_Backend"
@@ -77,13 +69,14 @@
           action="adminhtml/cache" 
           resource="Magento_Backend::cache"
           />
-          
+
+
         <add id="RW_MenuItem::menu_item_storesettings" 
         title="Store settings" module="Magento_Backend" 
         sortOrder="120" parent="RW_MenuItem::menu_item_storelinks" 
-        resource="Magento_Backend::stores_settings"
+        resource="Magento_Backend::stores"
           />
-        
+        <!--     STORE settings werkt nog niet hierboven moet update krijgen    -->
    </menu>
 </config>
 
